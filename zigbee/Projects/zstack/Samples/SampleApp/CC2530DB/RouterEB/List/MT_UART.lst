@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         06/Apr/2016  13:42:49 #
+# IAR C/C++ Compiler V8.10.3.10338/W32 for 8051         09/Apr/2016  10:38:36 #
 # Copyright 2004-2011 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -9,18 +9,18 @@
 #    Calling convention =  xdata reentrant                                    #
 #    Constant location  =  data_rom                                           #
 #    Dptr setup         =  1,16                                               #
-#    Source file        =  E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_ #
-#                          UART.c                                             #
-#    Command line       =  -f E:\Projects\IGreen-Zigbee\zigbee\Projects\zstac #
-#                          k\Samples\SampleApp\CC2530DB\..\..\..\Tools\CC2530 #
-#                          DB\f8wRouter.cfg (-DCPU32MHZ -DROOT=__near_func    #
-#                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE                   #
-#                          -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8         #
+#    Source file        =  C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Components\mt\MT_UART.c                         #
+#    Command line       =  -f C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\z #
+#                          igbee\Projects\zstack\Samples\SampleApp\CC2530DB\. #
+#                          .\..\..\Tools\CC2530DB\f8wRouter.cfg (-DCPU32MHZ   #
+#                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRU #
+#                          E -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8       #
 #                          -DMAC_CFG_RX_MAX=5 -DRTR_NWK) -f                   #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\Tools\CC2530DB\ #
-#                          f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0              #
-#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\Tools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO     #
+#                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR       #
 #                          -DDEFAULT_CHANLIST=0x00000800                      #
 #                          -DZDAPP_CONFIG_PAN_ID=0xFF00                       #
 #                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
@@ -42,82 +42,95 @@
 #                          __code" -DGENERIC=__generic                        #
 #                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
 #                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
-#                          -DREJOIN_POLL_RATE=440 E:\Projects\IGreen-Zigbee\z #
-#                          igbee\Components\mt\MT_UART.c -D ZTOOL_P1 -D       #
-#                          MT_TASK -D MT_SYS_FUNC -D MT_ZDO_FUNC -D           #
-#                          LCD_SUPPORTED=DEBUG -lC E:\Projects\IGreen-Zigbee\ #
-#                          zigbee\Projects\zstack\Samples\SampleApp\CC2530DB\ #
-#                          RouterEB\List\ -lA E:\Projects\IGreen-Zigbee\zigbe #
-#                          e\Projects\zstack\Samples\SampleApp\CC2530DB\Route #
-#                          rEB\List\ --diag_suppress Pe001,Pa010 -o           #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\RouterEB\Obj\ -e         #
-#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          -DREJOIN_POLL_RATE=440 C:\Users\hasee\Documents\Gi #
+#                          tHub\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c  #
+#                          -D ZTOOL_P1 -D MT_TASK -D MT_SYS_FUNC -D           #
+#                          MT_ZDO_FUNC -D LCD_SUPPORTED=DEBUG -lC             #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\Rout #
+#                          erEB\List\ -lA C:\Users\hasee\Documents\GitHub\IGr #
+#                          een-Zigbee\zigbee\Projects\zstack\Samples\SampleAp #
+#                          p\CC2530DB\RouterEB\List\ --diag_suppress          #
+#                          Pe001,Pa010 -o C:\Users\hasee\Documents\GitHub\IGr #
+#                          een-Zigbee\zigbee\Projects\zstack\Samples\SampleAp #
+#                          p\CC2530DB\RouterEB\Obj\ -e --no_code_motion       #
+#                          --debug --core=plain --dptr=16,1                   #
 #                          --data_model=large --code_model=banked             #
 #                          --calling_convention=xdata_reentrant               #
 #                          --place_constants=data_rom --nr_virtual_regs 16    #
-#                          -I E:\Projects\IGreen-Zigbee\zigbee\Projects\zstac #
-#                          k\Samples\SampleApp\CC2530DB\ -I                   #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\Source\ -I            #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\ZMain\TI2530DB\ #
-#                           -I E:\Projects\IGreen-Zigbee\zigbee\Projects\zsta #
-#                          ck\Samples\SampleApp\CC2530DB\..\..\..\..\..\Compo #
-#                          nents\hal\include\ -I E:\Projects\IGreen-Zigbee\zi #
-#                          gbee\Projects\zstack\Samples\SampleApp\CC2530DB\.. #
-#                          \..\..\..\..\Components\hal\target\CC2530EB\ -I    #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
-#                          s\mac\include\ -I E:\Projects\IGreen-Zigbee\zigbee #
-#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
-#                          ..\..\..\Components\mac\high_level\ -I             #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
-#                          s\mac\low_level\srf04\ -I                          #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
-#                          s\mac\low_level\srf04\single_chip\ -I              #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
-#                          s\mt\ -I E:\Projects\IGreen-Zigbee\zigbee\Projects #
-#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
-#                          Components\osal\include\ -I                        #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
-#                          s\services\saddr\ -I E:\Projects\IGreen-Zigbee\zig #
-#                          bee\Projects\zstack\Samples\SampleApp\CC2530DB\..\ #
-#                          ..\..\..\..\Components\services\sdata\ -I          #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\af\ -I E:\Projects\IGreen-Zigbee\zigbee\Pr #
-#                          ojects\zstack\Samples\SampleApp\CC2530DB\..\..\..\ #
-#                          ..\..\Components\stack\nwk\ -I                     #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\sapi\ -I E:\Projects\IGreen-Zigbee\zigbee\ #
-#                          Projects\zstack\Samples\SampleApp\CC2530DB\..\..\. #
-#                          .\..\..\Components\stack\sec\ -I                   #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\sys\ -I E:\Projects\IGreen-Zigbee\zigbee\P #
-#                          rojects\zstack\Samples\SampleApp\CC2530DB\..\..\.. #
-#                          \..\..\Components\stack\zdo\ -I                    #
-#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
-#                          s\zmac\ -I E:\Projects\IGreen-Zigbee\zigbee\Projec #
-#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
-#                          .\Components\zmac\f8w\ -Ohz --require_prototypes   #
-#    List file          =  E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\RouterEB\List\MT_UART.ls #
-#                          t                                                  #
-#    Object file        =  E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
-#                          amples\SampleApp\CC2530DB\RouterEB\Obj\MT_UART.r51 #
+#                          -I C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\z #
+#                          igbee\Projects\zstack\Samples\SampleApp\CC2530DB\  #
+#                          -I C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\z #
+#                          igbee\Projects\zstack\Samples\SampleApp\CC2530DB\. #
+#                          .\Source\ -I C:\Users\hasee\Documents\GitHub\IGree #
+#                          n-Zigbee\zigbee\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\..\..\..\ZMain\TI2530DB\ -I               #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\hal\include\ -I              #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\hal\target\CC2530EB\ -I      #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\mac\include\ -I              #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\mac\high_level\ -I           #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\mac\low_level\srf04\ -I      #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\mac\low_level\srf04\single_c #
+#                          hip\ -I C:\Users\hasee\Documents\GitHub\IGreen-Zig #
+#                          bee\zigbee\Projects\zstack\Samples\SampleApp\CC253 #
+#                          0DB\..\..\..\..\..\Components\mt\ -I               #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\osal\include\ -I             #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\services\saddr\ -I           #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\services\sdata\ -I           #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\stack\af\ -I                 #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\stack\nwk\ -I                #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\stack\sapi\ -I               #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\stack\sec\ -I                #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\stack\sys\ -I                #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\stack\zdo\ -I                #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\zmac\ -I                     #
+#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
+#                          .\..\..\..\Components\zmac\f8w\ -Ohz               #
+#                          --require_prototypes                               #
+#    List file          =  C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\Rout #
+#                          erEB\List\MT_UART.lst                              #
+#    Object file        =  C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
+#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\Rout #
+#                          erEB\Obj\MT_UART.r51                               #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
+C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
       1          /***************************************************************************************************
       2            Filename:       MT_UART.c
       3            Revised:        $Date: 2009-03-12 16:25:22 -0700 (Thu, 12 Mar 2009) $
@@ -481,37 +494,39 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
     199            
     200            (void)event;  // Intentionally unreferenced parameter
    \   00000C   802D         SJMP    ??MT_UartProcessZToolData_0
-    201          
-    202            while (Hal_UART_RxBufLen(port))
-    203            {
-    204              HalUARTRead (port, &ch, 1);
-    205          
-    206              switch (state)
-    207              {
-    208                case SOP_STATE:
-    209                  if (ch == MT_UART_SOF)
-    210                    state = LEN_STATE;
-    211                  break;
-    212          
-    213                case LEN_STATE:
-    214                  LEN_Token = ch;
-    215          
-    216                  tempDataLen = 0;
-    217          
-    218                  /* Allocate memory for the data */
-    219                  pMsg = (mtOSALSerialData_t *)osal_msg_allocate( sizeof ( mtOSALSerialData_t ) +
-    220                                                                  MT_RPC_FRAME_HDR_SZ + LEN_Token );
-    221          
-    222                  if (pMsg)
-    223                  {
-    224                    /* Fill up what we can */
-    225                    pMsg->hdr.event = CMD_SERIAL_MSG;
+    201           
+    202            //查询缓冲区读信息，也成了这里信息是否接受完成的标志
+    203            while (Hal_UART_RxBufLen(port))    
+    204            {
+    205              HalUARTRead (port, &ch, 1);
+    206              //一个一个的读，读完一个缓冲区就清一个
+    207              switch (state)     //这边是状态机
+    208              {
+    209                case SOP_STATE:
+    210                  if (ch == MT_UART_SOF)   //MT_UART_SOF的值默认是0xfe,所以数据必须FE格式开始发送才能进入下一状态，不然永远在这里转圈
+    211                    state = LEN_STATE;
+    212                  break;
+    213          
+    214                case LEN_STATE:
+    215                  LEN_Token = ch;
+    216          
+    217                  tempDataLen = 0;
+    218          
+    219                  /* Allocate memory for the data    分配内存空间 */
+    220                  pMsg = (mtOSALSerialData_t *)osal_msg_allocate( sizeof ( mtOSALSerialData_t ) +
+    221                                                                  MT_RPC_FRAME_HDR_SZ + LEN_Token );
+    222                  //如果分配成功
+    223                  if (pMsg)
+    224                  {
+    225                    /* Fill up what we can */
+    226                    pMsg->hdr.event = CMD_SERIAL_MSG;
    \                     ??MT_UartProcessZToolData_1:
    \   00000E   12....       LCALL   ??Subroutine10_0 & 0xFFFF
    \                     ??CrossCallReturnLabel_18:
    \   000011   7401         MOV     A,#0x1
    \   000013   F0           MOVX    @DPTR,A
-    226                    pMsg->msg = (uint8*)(pMsg+1);
+    227                    //注册事件号CMD_SERIAL_MSG; 很有用的
+    228                    pMsg->msg = (uint8*)(pMsg+1);
    \   000014   90....       MOV     DPTR,#pMsg
    \   000017   E0           MOVX    A,@DPTR
    \   000018   2404         ADD     A,#0x4
@@ -527,7 +542,8 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   000025   A3           INC     DPTR
    \   000026   E9           MOV     A,R1
    \   000027   12....       LCALL   ?Subroutine5 & 0xFFFF
-    227                    pMsg->msg[MT_RPC_POS_LEN] = LEN_Token;
+    229                    //定位数据位置
+    230                    pMsg->msg[MT_RPC_POS_LEN] = LEN_Token;
    \                     ??CrossCallReturnLabel_8:
    \   00002A   C0E0         PUSH    A
    \   00002C   12....       LCALL   ?Subroutine3 & 0xFFFF
@@ -536,18 +552,18 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \                     ??CrossCallReturnLabel_19:
    \   000032   D0E0         POP     A
    \   000034   F0           MOVX    @DPTR,A
-    228                    state = CMD_STATE1;
+    231                    state = CMD_STATE1;
    \   000035   90....       MOV     DPTR,#state
    \   000038   7401         MOV     A,#0x1
    \                     ??MT_UartProcessZToolData_2:
    \   00003A   F0           MOVX    @DPTR,A
-    229                  }
-    230                  else
-    231                  {
-    232                    state = SOP_STATE;
-    233                    return;
-    234                  }
-    235                  break;
+    232                  }
+    233                  else
+    234                  {
+    235                    state = SOP_STATE;
+    236                    return;
+    237                  }
+    238                  break;
    \                     ??MT_UartProcessZToolData_0:
    \   00003B                ; Setup parameters for call to function Hal_UART_RxBufLen
    \   00003B   EE           MOV     A,R6
@@ -632,9 +648,9 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   0000C3   12....       LCALL   ?DEALLOC_XSTACK8
    \   0000C6   7F02         MOV     R7,#0x2
    \   0000C8   02....       LJMP    ?BANKED_LEAVE_XDATA
-    236          
-    237                case CMD_STATE1:
-    238                  pMsg->msg[MT_RPC_POS_CMD0] = ch;
+    239          
+    240                case CMD_STATE1:
+    241                  pMsg->msg[MT_RPC_POS_CMD0] = ch;
    \                     ??MT_UartProcessZToolData_5:
    \   0000CB   85..82       MOV     DPL,?XSP + 0
    \   0000CE   85..83       MOV     DPH,?XSP + 1
@@ -644,14 +660,14 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \                     ??CrossCallReturnLabel_2:
    \   0000D7   D0E0         POP     A
    \   0000D9   F0           MOVX    @DPTR,A
-    239                  state = CMD_STATE2;
+    242                  state = CMD_STATE2;
    \   0000DA   90....       MOV     DPTR,#state
    \   0000DD   7402         MOV     A,#0x2
    \   0000DF   02....       LJMP    ??MT_UartProcessZToolData_2 & 0xFFFF
-    240                  break;
-    241          
-    242                case CMD_STATE2:
-    243                  pMsg->msg[MT_RPC_POS_CMD1] = ch;
+    243                  break;
+    244          
+    245                case CMD_STATE2:
+    246                  pMsg->msg[MT_RPC_POS_CMD1] = ch;
    \                     ??MT_UartProcessZToolData_6:
    \   0000E2   85..82       MOV     DPL,?XSP + 0
    \   0000E5   85..83       MOV     DPH,?XSP + 1
@@ -662,27 +678,27 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   0000EE   A3           INC     DPTR
    \   0000EF   D0E0         POP     A
    \   0000F1   12....       LCALL   ?Subroutine5 & 0xFFFF
-    244                  /* If there is no data, skip to FCS state */
-    245                  if (LEN_Token)
+    247                  /* If there is no data, skip to FCS state */
+    248                  if (LEN_Token)
    \                     ??CrossCallReturnLabel_10:
    \   0000F4   7003         JNZ     $+5
    \   0000F6   02....       LJMP    ??MT_UartProcessZToolData_10 & 0xFFFF
-    246                  {
-    247                    state = DATA_STATE;
+    249                  {
+    250                    state = DATA_STATE;
    \   0000F9   90....       MOV     DPTR,#state
    \   0000FC   7404         MOV     A,#0x4
    \   0000FE   02....       LJMP    ??MT_UartProcessZToolData_2 & 0xFFFF
-    248                  }
-    249                  else
-    250                  {
-    251                    state = FCS_STATE;
-    252                  }
-    253                  break;
-    254          
-    255                case DATA_STATE:
-    256          
-    257                  /* Fill in the buffer the first byte of the data */
-    258                  pMsg->msg[MT_RPC_FRAME_HDR_SZ + tempDataLen++] = ch;
+    251                  }
+    252                  else
+    253                  {
+    254                    state = FCS_STATE;
+    255                  }
+    256                  break;
+    257          
+    258                case DATA_STATE:
+    259          
+    260                  /* Fill in the buffer the first byte of the data */
+    261                  pMsg->msg[MT_RPC_FRAME_HDR_SZ + tempDataLen++] = ch;
    \                     ??MT_UartProcessZToolData_8:
    \   000101   85..82       MOV     DPL,?XSP + 0
    \   000104   85..83       MOV     DPH,?XSP + 1
@@ -701,18 +717,18 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   00011B   E0           MOVX    A,@DPTR
    \   00011C   04           INC     A
    \   00011D   F0           MOVX    @DPTR,A
-    259          
-    260                  /* Check number of bytes left in the Rx buffer */
-    261                  bytesInRxBuffer = Hal_UART_RxBufLen(port);
+    262          
+    263                  /* Check number of bytes left in the Rx buffer */
+    264                  bytesInRxBuffer = Hal_UART_RxBufLen(port);
    \   00011E                ; Setup parameters for call to function Hal_UART_RxBufLen
    \   00011E   EE           MOV     A,R6
    \   00011F   F9           MOV     R1,A
    \   000120   12....       LCALL   ??Hal_UART_RxBufLen?relay
    \   000123   EA           MOV     A,R2
    \   000124   FF           MOV     R7,A
-    262          
-    263                  /* If the remain of the data is there, read them all, otherwise, just read enough */
-    264                  if (bytesInRxBuffer <= LEN_Token - tempDataLen)
+    265          
+    266                  /* If the remain of the data is there, read them all, otherwise, just read enough */
+    267                  if (bytesInRxBuffer <= LEN_Token - tempDataLen)
    \   000125   90....       MOV     DPTR,#LEN_Token
    \   000128   E0           MOVX    A,@DPTR
    \   000129   F8           MOV     R0,A
@@ -735,24 +751,24 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   000141   65D0         XRL     A,PSW
    \   000143   33           RLC     A
    \   000144   4010         JC      ??MT_UartProcessZToolData_11
-    265                  {
-    266                    HalUARTRead (port, &pMsg->msg[MT_RPC_FRAME_HDR_SZ + tempDataLen], bytesInRxBuffer);
+    268                  {
+    269                    HalUARTRead (port, &pMsg->msg[MT_RPC_FRAME_HDR_SZ + tempDataLen], bytesInRxBuffer);
    \   000146                ; Setup parameters for call to function HalUARTRead
    \   000146   AC..         MOV     R4,?V0 + 0
    \   000148   7D00         MOV     R5,#0x0
    \   00014A   E0           MOVX    A,@DPTR
    \   00014B   F8           MOV     R0,A
    \   00014C   12....       LCALL   ?Subroutine1 & 0xFFFF
-    267                    tempDataLen += bytesInRxBuffer;
+    270                    tempDataLen += bytesInRxBuffer;
    \                     ??CrossCallReturnLabel_0:
    \   00014F   90....       MOV     DPTR,#tempDataLen
    \   000152   E0           MOVX    A,@DPTR
    \   000153   2F           ADD     A,R7
    \   000154   8016         SJMP    ??MT_UartProcessZToolData_12
-    268                  }
-    269                  else
-    270                  {
-    271                    HalUARTRead (port, &pMsg->msg[MT_RPC_FRAME_HDR_SZ + tempDataLen], LEN_Token - tempDataLen);
+    271                  }
+    272                  else
+    273                  {
+    274                    HalUARTRead (port, &pMsg->msg[MT_RPC_FRAME_HDR_SZ + tempDataLen], LEN_Token - tempDataLen);
    \                     ??MT_UartProcessZToolData_11:
    \   000156   E0           MOVX    A,@DPTR
    \   000157   F8           MOV     R0,A
@@ -765,17 +781,17 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   00015F   95E0         SUBB    A,0xE0 /* A   */
    \   000161   FD           MOV     R5,A
    \   000162   12....       LCALL   ?Subroutine1 & 0xFFFF
-    272                    tempDataLen += (LEN_Token - tempDataLen);
+    275                    tempDataLen += (LEN_Token - tempDataLen);
    \                     ??CrossCallReturnLabel_1:
    \   000165   90....       MOV     DPTR,#LEN_Token
    \   000168   E0           MOVX    A,@DPTR
    \   000169   90....       MOV     DPTR,#tempDataLen
    \                     ??MT_UartProcessZToolData_12:
    \   00016C   F0           MOVX    @DPTR,A
-    273                  }
-    274          
-    275                  /* If number of bytes read is equal to data length, time to move on to FCS */
-    276                  if ( tempDataLen == LEN_Token )
+    276                  }
+    277          
+    278                  /* If number of bytes read is equal to data length, time to move on to FCS */
+    279                  if ( tempDataLen == LEN_Token )
    \   00016D   E0           MOVX    A,@DPTR
    \   00016E   F8           MOV     R0,A
    \   00016F   90....       MOV     DPTR,#LEN_Token
@@ -787,22 +803,22 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   000179   90....       MOV     DPTR,#state
    \   00017C   7405         MOV     A,#0x5
    \   00017E   02....       LJMP    ??MT_UartProcessZToolData_2 & 0xFFFF
-    277                      state = FCS_STATE;
-    278          
-    279                  break;
-    280          
-    281                case FCS_STATE:
-    282          
-    283                  FSC_Token = ch;
+    280                      state = FCS_STATE;
+    281          
+    282                  break;
+    283          
+    284                case FCS_STATE:
+    285          
+    286                  FSC_Token = ch;
    \                     ??MT_UartProcessZToolData_9:
    \   000181   85..82       MOV     DPL,?XSP + 0
    \   000184   85..83       MOV     DPH,?XSP + 1
    \   000187   E0           MOVX    A,@DPTR
    \   000188   90....       MOV     DPTR,#FSC_Token
    \   00018B   12....       LCALL   ?Subroutine5 & 0xFFFF
-    284          
-    285                  /* Make sure it's correct */
-    286                  if ((MT_UartCalcFCS ((uint8*)&pMsg->msg[0], MT_RPC_FRAME_HDR_SZ + LEN_Token) == FSC_Token))
+    287          
+    288                  /* Make sure it's correct */
+    289                  if ((MT_UartCalcFCS ((uint8*)&pMsg->msg[0], MT_RPC_FRAME_HDR_SZ + LEN_Token) == FSC_Token)) //数据校验
    \                     ??CrossCallReturnLabel_11:
    \   00018E   2403         ADD     A,#0x3
    \   000190   F9           MOV     R1,A
@@ -820,8 +836,8 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   0001A1   68           XRL     A,R0
    \   0001A2   90....       MOV     DPTR,#pMsg
    \   0001A5   700F         JNZ     ??MT_UartProcessZToolData_13
-    287                  {
-    288                    osal_msg_send( App_TaskID, (byte *)pMsg );
+    290                  {
+    291                    osal_msg_send( App_TaskID, (byte *)pMsg );  //把数据包发送到OSAL层。非常重要
    \   0001A7                ; Setup parameters for call to function osal_msg_send
    \   0001A7   E0           MOVX    A,@DPTR
    \   0001A8   FA           MOV     R2,A
@@ -833,11 +849,11 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   0001B0   F9           MOV     R1,A
    \   0001B1   12....       LCALL   ??osal_msg_send?relay
    \   0001B4   8008         SJMP    ??MT_UartProcessZToolData_14
-    289                  }
-    290                  else
-    291                  {
-    292                    /* deallocate the msg */
-    293                    osal_msg_deallocate ( (uint8 *)pMsg );
+    292                  }
+    293                  else
+    294                  {
+    295                    /* deallocate the msg */
+    296                    osal_msg_deallocate ( (uint8 *)pMsg );   //清除申请的内存空间
    \                     ??MT_UartProcessZToolData_13:
    \   0001B6                ; Setup parameters for call to function osal_msg_deallocate
    \   0001B6   E0           MOVX    A,@DPTR
@@ -846,22 +862,22 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \   0001B9   E0           MOVX    A,@DPTR
    \   0001BA   FB           MOV     R3,A
    \   0001BB   12....       LCALL   ??osal_msg_deallocate?relay
-    294                  }
-    295          
-    296                  /* Reset the state, send or discard the buffers at this point */
-    297                  state = SOP_STATE;
+    297                  }
+    298          
+    299                  /* Reset the state, send or discard the buffers at this point */
+    300                  state = SOP_STATE;  //状态机一周期完成
    \                     ??MT_UartProcessZToolData_14:
    \   0001BE   90....       MOV     DPTR,#state
    \   0001C1   E4           CLR     A
    \   0001C2   02....       LJMP    ??MT_UartProcessZToolData_2 & 0xFFFF
-    298          
-    299                  break;
-    300          
-    301                default:
-    302                 break;
-    303              }
-    304            }
-    305          }
+    301          
+    302                  break;
+    303          
+    304                default:
+    305                 break;
+    306              }
+    307            }
+    308          }
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
    \                     ?Subroutine5:
@@ -978,131 +994,131 @@ E:\Projects\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c
    \                     ??MT_UartProcessZToolData?relay:
    \   000000   12....       LCALL   ?BDISPATCH
    \   000003   ......       DC24    MT_UartProcessZToolData
-    306          
-    307          #if defined (ZAPP_P1) || defined (ZAPP_P2)
-    308          /***************************************************************************************************
-    309           * @fn      MT_UartProcessZAppData
-    310           *
-    311           * @brief   | SOP | CMD  |   Data Length   | FSC  |
-    312           *          |  1  |  2   |       1         |  1   |
+    309          
+    310          #if defined (ZAPP_P1) || defined (ZAPP_P2)
+    311          /***************************************************************************************************
+    312           * @fn      MT_UartProcessZAppData
     313           *
-    314           *          Parses the data and determine either is SPI or just simply serial data
-    315           *          then send the data to correct place (MT or APP)
+    314           * @brief   | SOP | CMD  |   Data Length   | FSC  |
+    315           *          |  1  |  2   |       1         |  1   |
     316           *
-    317           * @param   port    - UART port
-    318           *          event   - Event that causes the callback
+    317           *          Parses the data and determine either is SPI or just simply serial data
+    318           *          then send the data to correct place (MT or APP)
     319           *
-    320           *
-    321           * @return  None
-    322           ***************************************************************************************************/
-    323          void MT_UartProcessZAppData ( uint8 port, uint8 event )
-    324          {
-    325          
-    326            osal_event_hdr_t  *msg_ptr;
-    327            uint16 length = 0;
-    328            uint16 rxBufLen  = Hal_UART_RxBufLen(MT_UART_DEFAULT_PORT);
-    329          
-    330            /*
-    331               If maxZAppBufferLength is 0 or larger than current length
-    332               the entire length of the current buffer is returned.
-    333            */
-    334            if ((MT_UartMaxZAppBufLen != 0) && (MT_UartMaxZAppBufLen <= rxBufLen))
-    335            {
-    336              length = MT_UartMaxZAppBufLen;
-    337            }
-    338            else
-    339            {
-    340              length = rxBufLen;
-    341            }
-    342          
-    343            /* Verify events */
-    344            if (event == HAL_UART_TX_FULL)
-    345            {
-    346              // Do something when TX if full
-    347              return;
-    348            }
-    349          
-    350            if (event & ( HAL_UART_RX_FULL | HAL_UART_RX_ABOUT_FULL | HAL_UART_RX_TIMEOUT))
-    351            {
-    352              if ( App_TaskID )
-    353              {
-    354                /*
-    355                   If Application is ready to receive and there is something
-    356                   in the Rx buffer then send it up
-    357                */
-    358                if ((MT_UartZAppRxStatus == MT_UART_ZAPP_RX_READY ) && (length != 0))
-    359                {
-    360                  /* Disable App flow control until it processes the current data */
-    361                   MT_UartAppFlowControl (MT_UART_ZAPP_RX_NOT_READY);
-    362          
-    363                  /* 2 more bytes are added, 1 for CMD type, other for length */
-    364                  msg_ptr = (osal_event_hdr_t *)osal_msg_allocate( length + sizeof(osal_event_hdr_t) );
-    365                  if ( msg_ptr )
-    366                  {
-    367                    msg_ptr->event = SPI_INCOMING_ZAPP_DATA;
-    368                    msg_ptr->status = length;
-    369          
-    370                    /* Read the data of Rx buffer */
-    371                    HalUARTRead( MT_UART_DEFAULT_PORT, (uint8 *)(msg_ptr + 1), length );
+    320           * @param   port    - UART port
+    321           *          event   - Event that causes the callback
+    322           *
+    323           *
+    324           * @return  None
+    325           ***************************************************************************************************/
+    326          void MT_UartProcessZAppData ( uint8 port, uint8 event )
+    327          {
+    328          
+    329            osal_event_hdr_t  *msg_ptr;
+    330            uint16 length = 0;
+    331            uint16 rxBufLen  = Hal_UART_RxBufLen(MT_UART_DEFAULT_PORT);
+    332          
+    333            /*
+    334               If maxZAppBufferLength is 0 or larger than current length
+    335               the entire length of the current buffer is returned.
+    336            */
+    337            if ((MT_UartMaxZAppBufLen != 0) && (MT_UartMaxZAppBufLen <= rxBufLen))
+    338            {
+    339              length = MT_UartMaxZAppBufLen;
+    340            }
+    341            else
+    342            {
+    343              length = rxBufLen;
+    344            }
+    345          
+    346            /* Verify events */
+    347            if (event == HAL_UART_TX_FULL)
+    348            {
+    349              // Do something when TX if full
+    350              return;
+    351            }
+    352          
+    353            if (event & ( HAL_UART_RX_FULL | HAL_UART_RX_ABOUT_FULL | HAL_UART_RX_TIMEOUT))
+    354            {
+    355              if ( App_TaskID )
+    356              {
+    357                /*
+    358                   If Application is ready to receive and there is something
+    359                   in the Rx buffer then send it up
+    360                */
+    361                if ((MT_UartZAppRxStatus == MT_UART_ZAPP_RX_READY ) && (length != 0))
+    362                {
+    363                  /* Disable App flow control until it processes the current data */
+    364                   MT_UartAppFlowControl (MT_UART_ZAPP_RX_NOT_READY);
+    365          
+    366                  /* 2 more bytes are added, 1 for CMD type, other for length */
+    367                  msg_ptr = (osal_event_hdr_t *)osal_msg_allocate( length + sizeof(osal_event_hdr_t) );
+    368                  if ( msg_ptr )
+    369                  {
+    370                    msg_ptr->event = SPI_INCOMING_ZAPP_DATA;
+    371                    msg_ptr->status = length;
     372          
-    373                    /* Send the raw data to application...or where ever */
-    374                    osal_msg_send( App_TaskID, (uint8 *)msg_ptr );
-    375                  }
-    376                }
-    377              }
-    378            }
-    379          }
-    380          
-    381          /***************************************************************************************************
-    382           * @fn      SPIMgr_ZAppBufferLengthRegister
-    383           *
-    384           * @brief
-    385           *
-    386           * @param   maxLen - Max Length that the application wants at a time
-    387           *
-    388           * @return  None
-    389           *
-    390           ***************************************************************************************************/
-    391          void MT_UartZAppBufferLengthRegister ( uint16 maxLen )
-    392          {
-    393            /* If the maxLen is larger than the RX buff, something is not right */
-    394            if (maxLen <= MT_UART_DEFAULT_MAX_RX_BUFF)
-    395              MT_UartMaxZAppBufLen = maxLen;
-    396            else
-    397              MT_UartMaxZAppBufLen = 1; /* default is 1 byte */
-    398          }
-    399          
-    400          /***************************************************************************************************
-    401           * @fn      SPIMgr_AppFlowControl
-    402           *
-    403           * @brief
-    404           *
-    405           * @param   status - ready to send or not
-    406           *
-    407           * @return  None
-    408           *
-    409           ***************************************************************************************************/
-    410          void MT_UartAppFlowControl ( bool status )
-    411          {
-    412          
-    413            /* Make sure only update if needed */
-    414            if (status != MT_UartZAppRxStatus )
-    415            {
-    416              MT_UartZAppRxStatus = status;
-    417            }
-    418          
-    419            /* App is ready to read again, ProcessZAppData have to be triggered too */
-    420            if (status == MT_UART_ZAPP_RX_READY)
-    421            {
-    422              MT_UartProcessZAppData (MT_UART_DEFAULT_PORT, HAL_UART_RX_TIMEOUT );
-    423            }
-    424          
-    425          }
-    426          
-    427          #endif //ZAPP
-    428          
-    429          /***************************************************************************************************
-    430          ***************************************************************************************************/
+    373                    /* Read the data of Rx buffer */
+    374                    HalUARTRead( MT_UART_DEFAULT_PORT, (uint8 *)(msg_ptr + 1), length );
+    375          
+    376                    /* Send the raw data to application...or where ever */
+    377                    osal_msg_send( App_TaskID, (uint8 *)msg_ptr );
+    378                  }
+    379                }
+    380              }
+    381            }
+    382          }
+    383          
+    384          /***************************************************************************************************
+    385           * @fn      SPIMgr_ZAppBufferLengthRegister
+    386           *
+    387           * @brief
+    388           *
+    389           * @param   maxLen - Max Length that the application wants at a time
+    390           *
+    391           * @return  None
+    392           *
+    393           ***************************************************************************************************/
+    394          void MT_UartZAppBufferLengthRegister ( uint16 maxLen )
+    395          {
+    396            /* If the maxLen is larger than the RX buff, something is not right */
+    397            if (maxLen <= MT_UART_DEFAULT_MAX_RX_BUFF)
+    398              MT_UartMaxZAppBufLen = maxLen;
+    399            else
+    400              MT_UartMaxZAppBufLen = 1; /* default is 1 byte */
+    401          }
+    402          
+    403          /***************************************************************************************************
+    404           * @fn      SPIMgr_AppFlowControl
+    405           *
+    406           * @brief
+    407           *
+    408           * @param   status - ready to send or not
+    409           *
+    410           * @return  None
+    411           *
+    412           ***************************************************************************************************/
+    413          void MT_UartAppFlowControl ( bool status )
+    414          {
+    415          
+    416            /* Make sure only update if needed */
+    417            if (status != MT_UartZAppRxStatus )
+    418            {
+    419              MT_UartZAppRxStatus = status;
+    420            }
+    421          
+    422            /* App is ready to read again, ProcessZAppData have to be triggered too */
+    423            if (status == MT_UART_ZAPP_RX_READY)
+    424            {
+    425              MT_UartProcessZAppData (MT_UART_DEFAULT_PORT, HAL_UART_RX_TIMEOUT );
+    426            }
+    427          
+    428          }
+    429          
+    430          #endif //ZAPP
+    431          
+    432          /***************************************************************************************************
+    433          ***************************************************************************************************/
 
    Maximum stack usage in bytes:
 

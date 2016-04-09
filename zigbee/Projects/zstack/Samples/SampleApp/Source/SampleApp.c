@@ -12,8 +12,9 @@
 #include "hal_lcd.h"
 #include "hal_led.h"
 #include "hal_key.h"
+#include "ds18b20.h" //温度传感器头文件
 #include  "MT_UART.h" //此处用于串口
-#include "DHT11.H" //温湿度传感器头文件      
+//#include "DHT11.H" //温湿度传感器头文件      
 #include "instructions.h" //存放Igreen通信协议
 
 /**
@@ -32,8 +33,9 @@
 
 
 #define LED P1_0
-#define HUMI_PIN P2_0 //定义土壤湿度的检测引脚
+//#define HUMI_PIN P2_0 //定义土壤湿度的检测引脚
 void sendmsg_temp_humi(void);  //发送温度和湿度
+void sendmsg_temp(void);   //18b20温度
 
 void SampleApp_HandleKeys( uint8 shift, uint8 keys );
 void SampleApp_MessageMSGCB( afIncomingMSGPacket_t *pckt );
@@ -90,27 +92,29 @@ uint8 SampleAppFlashCounter = 0;
  *----------------------------------------------------------------*/
 void SampleApp_SendPeriodicMessage( void )
 {
-  sendmsg_temp_humi(); //发送温度和湿度
+ // sendmsg_temp_humi(); //发送温度和湿度
+    sendmsg_temp();
 
 }
+
 /**----------------------------------------------------------------*
  * @函数    void sendmsg_temp_humi(void)
  * @简介    发送温度和湿度
  * @参数    none
  * @返回值  none
  *----------------------------------------------------------------*/
-void sendmsg_temp_humi(void)
+void sendmsg_temp(void)
 {
-  uint8 buffer[32];
+     uint8 buffer[32];
   /*----------------------------------- 
    *  温度湿度检测将其放入缓冲区
    *----------------------------------*/
-  DHT11();    //温度检测
+  Temp_test();    //温度检测
   buffer[0] = RES_TEMP;   //温度 
   buffer[1] = 0; buffer[2] = 0; buffer[3] = 0; buffer[4] = 1; //4byte=32bit 唯一ID
   buffer[5] = CMD_SEP; 
-  buffer[6] = temp_decade + '0';
-  buffer[7] = temp_unit   + '0';
+  buffer[6] = temp/10 + '0';
+  buffer[7] = temp%10 + '0';
   buffer[8]= CMD_END; 
   //将温度发送给节点
   if ( AF_DataRequest( &SampleApp_Periodic_DstAddr, &SampleApp_epDesc,
@@ -122,25 +126,58 @@ void sendmsg_temp_humi(void)
                        AF_DEFAULT_RADIUS ) == afStatus_SUCCESS )
   {
       HalUARTWrite(0, "temp success\n", strlen("temp success\n")); //显示温度发送成功
-  }
-  else{// Error occurred in request to send.
-  }
-
-  buffer[0] = RES_HUMI;   //湿度 
-  buffer[1] = 0; buffer[2] = 0; buffer[3] = 0; buffer[4] = 1;//4byte=32bit 唯一ID(1)
-  buffer[5] = CMD_SEP; 
-  buffer[6] = humi_decade + '0';
-  buffer[7] = humi_unit   + '0';
-  buffer[8] = CMD_END; 
-  //将湿度发送给节点
-  if ( AF_DataRequest( &SampleApp_Periodic_DstAddr, &SampleApp_epDesc,SAMPLEAPP_PERIODIC_CLUSTERID, 9,buffer,&SampleApp_TransID,AF_DISCV_ROUTE,AF_DEFAULT_RADIUS ) 
-                             == afStatus_SUCCESS )
-  {
-      HalUARTWrite(0, "humi success\n", strlen("humi success\n")); //显示温度发送成功
-  }
+  } 
   else{// Error occurred in request to send.
   }
 }
+/**----------------------------------------------------------------*
+ * @函数    void sendmsg_temp_humi(void)
+ * @简介    发送温度和湿度
+ * @参数    none
+ * @返回值  none
+ *----------------------------------------------------------------*/
+//void sendmsg_temp_humi(void)
+//{
+//  uint8 buffer[32];
+//  /*----------------------------------- 
+//   *  温度湿度检测将其放入缓冲区
+//   *----------------------------------*/
+//  DHT11();    //温度检测
+//  buffer[0] = RES_TEMP;   //温度 
+//  buffer[1] = 0; buffer[2] = 0; buffer[3] = 0; buffer[4] = 1; //4byte=32bit 唯一ID
+//  buffer[5] = CMD_SEP; 
+//  buffer[6] = temp_decade + '0';
+//  buffer[7] = temp_unit   + '0';
+//  buffer[8]= CMD_END; 
+//  //将温度发送给节点
+//  if ( AF_DataRequest( &SampleApp_Periodic_DstAddr, &SampleApp_epDesc,
+//                       SAMPLEAPP_PERIODIC_CLUSTERID, //和主节点中SampleApp_MessageMSGCB的SAMPLEAPP_PERIODIC_CLUSTERID一致。
+//                       9,//字节数
+//                       buffer,//存放温度缓冲区
+//                       &SampleApp_TransID,
+//                       AF_DISCV_ROUTE,
+//                       AF_DEFAULT_RADIUS ) == afStatus_SUCCESS )
+//  {
+//      HalUARTWrite(0, "temp success\n", strlen("temp success\n")); //显示温度发送成功
+//  }
+//  else{// Error occurred in request to send.
+//  }
+//
+//  buffer[0] = RES_HUMI;   //湿度 
+//  buffer[1] = 0; buffer[2] = 0; buffer[3] = 0; buffer[4] = 1;//4byte=32bit 唯一ID(1)
+//  buffer[5] = CMD_SEP; 
+//  buffer[6] = humi_decade + '0';
+//  buffer[7] = humi_unit   + '0';
+//  buffer[8] = CMD_END; 
+//  //将湿度发送给节点
+//  if ( AF_DataRequest( &SampleApp_Periodic_DstAddr, &SampleApp_epDesc,SAMPLEAPP_PERIODIC_CLUSTERID, 9,buffer,&SampleApp_TransID,AF_DISCV_ROUTE,AF_DEFAULT_RADIUS ) 
+//                             == afStatus_SUCCESS )
+//  {
+//      HalUARTWrite(0, "humi success\n", strlen("humi success\n")); //显示温度发送成功
+//  }
+//  else{// Error occurred in request to send.
+//  }
+//}
 
 /**-----------------------------------------------------------------------------
  * @fn      SampleApp_MessageMSGCB
@@ -286,6 +323,10 @@ uint16 SampleApp_ProcessEvent( uint8 task_id, uint16 events )
     {
       switch ( MSGpkt->hdr.event )
       {
+   //   case CMD_SERIAL_MSG:   //串口收到数据后由MT_UART层传递过来的数据
+          
+    //      SampleApp_SerialCMD((mtOSALSerialData_t *)MSGpkt);
+      //    break;
         // Received when a key is pressed
         case KEY_CHANGE:
           SampleApp_HandleKeys( ((keyChange_t *)MSGpkt)->state, ((keyChange_t *)MSGpkt)->keys );

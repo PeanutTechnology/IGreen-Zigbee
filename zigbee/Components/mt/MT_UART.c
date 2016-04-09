@@ -198,15 +198,16 @@ void MT_UartProcessZToolData ( uint8 port, uint8 event )
   uint8  bytesInRxBuffer;
   
   (void)event;  // Intentionally unreferenced parameter
-
-  while (Hal_UART_RxBufLen(port))
+ 
+  //查询缓冲区读信息，也成了这里信息是否接受完成的标志
+  while (Hal_UART_RxBufLen(port))    
   {
     HalUARTRead (port, &ch, 1);
-
-    switch (state)
+    //一个一个的读，读完一个缓冲区就清一个
+    switch (state)     //这边是状态机
     {
       case SOP_STATE:
-        if (ch == MT_UART_SOF)
+        if (ch == MT_UART_SOF)   //MT_UART_SOF的值默认是0xfe,所以数据必须FE格式开始发送才能进入下一状态，不然永远在这里转圈
           state = LEN_STATE;
         break;
 
@@ -215,15 +216,17 @@ void MT_UartProcessZToolData ( uint8 port, uint8 event )
 
         tempDataLen = 0;
 
-        /* Allocate memory for the data */
+        /* Allocate memory for the data    分配内存空间 */
         pMsg = (mtOSALSerialData_t *)osal_msg_allocate( sizeof ( mtOSALSerialData_t ) +
                                                         MT_RPC_FRAME_HDR_SZ + LEN_Token );
-
+        //如果分配成功
         if (pMsg)
         {
           /* Fill up what we can */
           pMsg->hdr.event = CMD_SERIAL_MSG;
+          //注册事件号CMD_SERIAL_MSG; 很有用的
           pMsg->msg = (uint8*)(pMsg+1);
+          //定位数据位置
           pMsg->msg[MT_RPC_POS_LEN] = LEN_Token;
           state = CMD_STATE1;
         }
@@ -283,18 +286,18 @@ void MT_UartProcessZToolData ( uint8 port, uint8 event )
         FSC_Token = ch;
 
         /* Make sure it's correct */
-        if ((MT_UartCalcFCS ((uint8*)&pMsg->msg[0], MT_RPC_FRAME_HDR_SZ + LEN_Token) == FSC_Token))
+        if ((MT_UartCalcFCS ((uint8*)&pMsg->msg[0], MT_RPC_FRAME_HDR_SZ + LEN_Token) == FSC_Token)) //数据校验
         {
-          osal_msg_send( App_TaskID, (byte *)pMsg );
+          osal_msg_send( App_TaskID, (byte *)pMsg );  //把数据包发送到OSAL层。非常重要
         }
         else
         {
           /* deallocate the msg */
-          osal_msg_deallocate ( (uint8 *)pMsg );
+          osal_msg_deallocate ( (uint8 *)pMsg );   //清除申请的内存空间
         }
 
         /* Reset the state, send or discard the buffers at this point */
-        state = SOP_STATE;
+        state = SOP_STATE;  //状态机一周期完成
 
         break;
 

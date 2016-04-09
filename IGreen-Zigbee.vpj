@@ -273,6 +273,7 @@
             <F N="zigbee/Components/stack/nwk/BindingTable.c"/>
             <F N="zigbee/Components/mt/DebugTrace.c"/>
             <F N="zigbee/Projects/zstack/Samples/SampleApp/Source/DHT11.C"/>
+            <F N="zigbee/Projects/zstack/Samples/SampleApp/Source/ds18b20.c"/>
             <F N="zigbee/Components/hal/target/CC2530EB/hal_adc.c"/>
             <F N="zigbee/Components/hal/target/CC2530USB/hal_adc.c"/>
             <F N="zigbee/Components/hal/target/CC2530ZNP/hal_adc.c"/>
@@ -402,6 +403,7 @@
             <F N="zigbee/Components/osal/include/comdef.h"/>
             <F N="zigbee/Components/mt/DebugTrace.h"/>
             <F N="zigbee/Projects/zstack/Samples/SampleApp/Source/DHT11.H"/>
+            <F N="zigbee/Projects/zstack/Samples/SampleApp/Source/ds18b20.h"/>
             <F N="zigbee/Components/stack/sec/eccapi.h"/>
             <F N="zigbee/Components/hal/include/hal_adc.h"/>
             <F N="zigbee/Components/hal/target/CC2530EB/hal_aes.h"/>
