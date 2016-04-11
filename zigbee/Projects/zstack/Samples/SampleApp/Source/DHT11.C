@@ -38,10 +38,10 @@ uchar ucharT_data_H,ucharT_data_L,ucharRH_data_H,ucharRH_data_L,ucharcheckdata;
 uchar ucharT_data_H_temp,ucharT_data_L_temp,ucharRH_data_H_temp,ucharRH_data_L_temp,ucharcheckdata_temp;
 uchar ucharcomdata;
 
-uchar temp[2]={0,0}; 
-uchar temp1[5]="temp=";
-uchar humidity[2]={0,0};
-uchar humidity1[9]="humidity=";
+//uchar dht11_temp[2]={0,0}; 
+//uchar dht11_temp1[5]="temp=";
+//uchar dht11_humidity[2]={0,0};
+//uchar dht11_humidity1[9]="humidity=";
 
 /****************************
         ÑÓÊ±º¯Êý

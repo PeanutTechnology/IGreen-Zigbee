@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         06/Apr/2016  08:22:00 #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         09/Apr/2016  20:28:51 #
 # Copyright 2004-2011 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -9,21 +9,18 @@
 #    Calling convention =  xdata reentrant                                    #
 #    Constant location  =  data_rom                                           #
 #    Dptr setup         =  1,16                                               #
-#    Source file        =  E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\Source\DHT11.C        #
-#    Command line       =  -f E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊ #
-#                          µÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Pr #
-#                          ojects\zstack\Samples\SampleApp\CC2530DB\..\..\..\ #
-#                          Tools\CC2530DB\f8wCoord.cfg (-DCPU32MHZ            #
-#                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRU #
-#                          E -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8       #
+#    Source file        =  E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\Source\DHT11.C                    #
+#    Command line       =  -f E:\Projects\IGreen-Zigbee\zigbee\Projects\zstac #
+#                          k\Samples\SampleApp\CC2530DB\..\..\..\Tools\CC2530 #
+#                          DB\f8wCoord.cfg (-DCPU32MHZ -DROOT=__near_func     #
+#                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE                   #
+#                          -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8         #
 #                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)    #
-#                          -f E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊ #
-#                          µÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Pr #
-#                          ojects\zstack\Samples\SampleApp\CC2530DB\..\..\..\ #
-#                          Tools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO          #
-#                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR       #
+#                          -f E:\Projects\IGreen-Zigbee\zigbee\Projects\zstac #
+#                          k\Samples\SampleApp\CC2530DB\..\..\..\Tools\CC2530 #
+#                          DB\f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0           #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
 #                          -DDEFAULT_CHANLIST=0x00000800                      #
 #                          -DZDAPP_CONFIG_PAN_ID=0xFF00                       #
 #                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
@@ -45,120 +42,84 @@
 #                          __code" -DGENERIC=__generic                        #
 #                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
 #                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
-#                          -DREJOIN_POLL_RATE=440 E:\StudyData\zigbee\2_Íø·ä¿ #
-#                          Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é² #
-#                          ¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Projects\zstack\Samples\SampleAp #
-#                          p\Source\DHT11.C -D ZTOOL_P1 -D xMT_TASK -D        #
-#                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                    #
-#                          LCD_SUPPORTED=DEBUG -lC E:\StudyData\zigbee\2_Íø·ä #
-#                          ¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é #
-#                          ²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Projects\zstack\Samples\SampleA #
-#                          pp\CC2530DB\CoordinatorEB\List\ -lA                #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\CoordinatorE #
-#                          B\List\ --diag_suppress Pe001,Pa010 -o             #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\CoordinatorE #
-#                          B\Obj\ -e --no_code_motion --debug --core=plain    #
-#                          --dptr=16,1 --data_model=large                     #
-#                          --code_model=banked --calling_convention=xdata_ree #
-#                          ntrant --place_constants=data_rom                  #
-#                          --nr_virtual_regs 16 -I E:\StudyData\zigbee\2_Íø·ä #
-#                          ¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é #
-#                          ²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Projects\zstack\Samples\SampleA #
-#                          pp\CC2530DB\ -I E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾À #
-#                          ý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥ #
-#                          £©\3¡¢¹ã²¥\Projects\zstack\Samples\SampleApp\CC253 #
-#                          0DB\..\Source\ -I E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê #
-#                          ¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã #
-#                          ²¥£©\3¡¢¹ã²¥\Projects\zstack\Samples\SampleApp\CC2 #
-#                          530DB\..\..\..\ZMain\TI2530DB\ -I                  #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\hal\include\ -I                      #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\hal\target\CC2530EB\ -I              #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\mac\include\ -I                      #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\mac\high_level\ -I                   #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\mac\low_level\srf04\ -I              #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\mac\low_level\srf04\single_chip\ -I  #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\mt\ -I E:\StudyData\zigbee\2_Íø·ä¿Æ¼ #
-#                          ¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡ #
-#                          ¢¹ã²¥£©\3¡¢¹ã²¥\Projects\zstack\Samples\SampleApp\ #
-#                          CC2530DB\..\..\..\..\..\Components\osal\include\   #
-#                          -I E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊ #
-#                          µÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Pr #
+#                          -DREJOIN_POLL_RATE=440 E:\Projects\IGreen-Zigbee\z #
+#                          igbee\Projects\zstack\Samples\SampleApp\Source\DHT #
+#                          11.C -D ZTOOL_P1 -D xMT_TASK -D xMT_SYS_FUNC -D    #
+#                          xMT_ZDO_FUNC -D LCD_SUPPORTED=DEBUG -lC            #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\CoordinatorEB\List\ -lA  #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\CoordinatorEB\List\      #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\CoordinatorEB\Obj\ -e    #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I E:\Projects\IGreen-Zigbee\zigbee\Projects\zstac #
+#                          k\Samples\SampleApp\CC2530DB\ -I                   #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\Source\ -I            #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\ZMain\TI2530DB\ #
+#                           -I E:\Projects\IGreen-Zigbee\zigbee\Projects\zsta #
+#                          ck\Samples\SampleApp\CC2530DB\..\..\..\..\..\Compo #
+#                          nents\hal\include\ -I E:\Projects\IGreen-Zigbee\zi #
+#                          gbee\Projects\zstack\Samples\SampleApp\CC2530DB\.. #
+#                          \..\..\..\..\Components\hal\target\CC2530EB\ -I    #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\include\ -I E:\Projects\IGreen-Zigbee\zigbee #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\mac\high_level\ -I             #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\low_level\srf04\ -I                          #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\low_level\srf04\single_chip\ -I              #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\mt\ -I E:\Projects\IGreen-Zigbee\zigbee\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\osal\include\ -I                        #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\services\saddr\ -I E:\Projects\IGreen-Zigbee\zig #
+#                          bee\Projects\zstack\Samples\SampleApp\CC2530DB\..\ #
+#                          ..\..\..\..\Components\services\sdata\ -I          #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\af\ -I E:\Projects\IGreen-Zigbee\zigbee\Pr #
 #                          ojects\zstack\Samples\SampleApp\CC2530DB\..\..\..\ #
-#                          ..\..\Components\services\saddr\ -I                #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\services\sdata\ -I                   #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\stack\af\ -I                         #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\stack\nwk\ -I                        #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\stack\sapi\ -I                       #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\stack\sec\ -I                        #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\stack\sys\ -I                        #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\stack\zdo\ -I                        #
-#                          E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\ #
-#                          ..\Components\zmac\ -I E:\StudyData\zigbee\2_Íø·ä¿ #
-#                          Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é² #
-#                          ¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Projects\zstack\Samples\SampleAp #
-#                          p\CC2530DB\..\..\..\..\..\Components\zmac\f8w\     #
-#                          -Ohz --require_prototypes                          #
-#    List file          =  E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\CoordinatorE #
-#                          B\List\DHT11.lst                                   #
-#    Object file        =  E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé #
-#                          \9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Proje #
-#                          cts\zstack\Samples\SampleApp\CC2530DB\CoordinatorE #
-#                          B\Obj\DHT11.r51                                    #
+#                          ..\..\Components\stack\nwk\ -I                     #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\sapi\ -I E:\Projects\IGreen-Zigbee\zigbee\ #
+#                          Projects\zstack\Samples\SampleApp\CC2530DB\..\..\. #
+#                          .\..\..\Components\stack\sec\ -I                   #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\sys\ -I E:\Projects\IGreen-Zigbee\zigbee\P #
+#                          rojects\zstack\Samples\SampleApp\CC2530DB\..\..\.. #
+#                          \..\..\Components\stack\zdo\ -I                    #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\zmac\ -I E:\Projects\IGreen-Zigbee\zigbee\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\zmac\f8w\ -Ohz --require_prototypes   #
+#    List file          =  E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\CoordinatorEB\List\DHT11 #
+#                          .lst                                               #
+#    Object file        =  E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\CoordinatorEB\Obj\DHT11. #
+#                          r51                                                #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢¹ã²¥£©\3¡¢¹ã²¥\Projects\zstack\Samples\SampleApp\Source\DHT11.C
+E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\Samples\SampleApp\Source\DHT11.C
       1          #include <ioCC2530.h>
 
    \                                 In  segment SFR_AN, at 0x80
@@ -295,32 +256,10 @@ E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢
    \   000000                DS 1
    \   000001                REQUIRE __INIT_XDATA_Z
      40          
-
-   \                                 In  segment XDATA_Z, align 1, keep-with-next
-     41          uchar temp[2]={0,0}; 
-   \                     temp:
-   \   000000                DS 2
-   \   000002                REQUIRE __INIT_XDATA_Z
-
-   \                                 In  segment XDATA_I, align 1, keep-with-next
-     42          uchar temp1[5]="temp=";
-   \                     temp1:
-   \   000000                DS 5
-   \   000005                REQUIRE `?<Initializer for temp1>`
-   \   000005                REQUIRE __INIT_XDATA_I
-
-   \                                 In  segment XDATA_Z, align 1, keep-with-next
-     43          uchar humidity[2]={0,0};
-   \                     humidity:
-   \   000000                DS 2
-   \   000002                REQUIRE __INIT_XDATA_Z
-
-   \                                 In  segment XDATA_I, align 1, keep-with-next
-     44          uchar humidity1[9]="humidity=";
-   \                     humidity1:
-   \   000000                DS 9
-   \   000009                REQUIRE `?<Initializer for humidity1>`
-   \   000009                REQUIRE __INIT_XDATA_I
+     41          //uchar dht11_temp[2]={0,0}; 
+     42          //uchar dht11_temp1[5]="temp=";
+     43          //uchar dht11_humidity[2]={0,0};
+     44          //uchar dht11_humidity1[9]="humidity=";
      45          
      46          /****************************
      47                  ÑÓÊ±º¯Êý
@@ -763,17 +702,6 @@ E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢
    \                     `?<Initializer for temp_unit>`:
    \   000000   04           DB 4
 
-   \                                 In  segment XDATA_ID, align 1, keep-with-next
-   \                     `?<Initializer for temp1>`:
-   \   000000   74656D70     DB 74H, 65H, 6DH, 70H, 3DH
-   \            3D      
-
-   \                                 In  segment XDATA_ID, align 1, keep-with-next
-   \                     `?<Initializer for humidity1>`:
-   \   000000   68756D69     DB 68H, 75H, 6DH, 69H, 64H, 69H, 74H, 79H
-   \            64697479
-   \   000008   3D           DB 3DH
-
    \                                 In  segment BANK_RELAYS, align 1
    \                     ??Delay_us?relay:
    \   000000   12....       LCALL   ?BDISPATCH
@@ -849,10 +777,6 @@ E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢
      ucharRH_data_L_temp             1
      ucharcheckdata_temp             1
      ucharcomdata                    1
-     temp                            2
-     temp1                           5
-     humidity                        2
-     humidity1                       9
      Delay_us                        6
      ?Subroutine0                    5
      ??Subroutine5_0                 7
@@ -866,8 +790,6 @@ E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢
      ?Subroutine2                    1
      ??Subroutine6_0                 8
      ?<Initializer for temp_unit>    1
-     ?<Initializer for temp1>        5
-     ?<Initializer for humidity1>    9
      ??Delay_us?relay                6
      ??Delay_10us?relay              6
      ??Delay_ms?relay                6
@@ -878,13 +800,13 @@ E:\StudyData\zigbee\2_Íø·ä¿Æ¼¼\Ê¾Àý³ÌÐò\2.×éÍøÊµÑé\9¡¢ÍøÂçÍ¨ÐÅÊµÑé£¨µ¥²¥¡¢×é²¥¡¢
  463 bytes in segment BANKED_CODE
   30 bytes in segment BANK_RELAYS
    2 bytes in segment SFR_AN
-  15 bytes in segment XDATA_I
-  15 bytes in segment XDATA_ID
-  20 bytes in segment XDATA_Z
+   1 byte  in segment XDATA_I
+   1 byte  in segment XDATA_ID
+  16 bytes in segment XDATA_Z
  
- 508 bytes of CODE  memory
+ 494 bytes of CODE  memory
    0 bytes of DATA  memory (+ 2 bytes shared)
-  35 bytes of XDATA memory
+  17 bytes of XDATA memory
 
 Errors: none
 Warnings: none

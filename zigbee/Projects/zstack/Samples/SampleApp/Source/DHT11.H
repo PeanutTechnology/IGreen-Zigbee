@@ -8,10 +8,10 @@ extern void Delay_ms(unsigned int xms);	//延时函数
 extern void COM(void);         // 温湿写入
 extern void DHT11(void);   //温湿传感启动
 
-extern uchar temp[2]; 
-extern uchar temp1[5];
-extern uchar humidity[2];
-extern uchar humidity1[9];
+//extern uchar dht11_temp[2]; 
+//extern uchar dht11_temp1[5];
+//extern uchar dht11_humidity[2];
+//extern uchar dht11_humidity1[9];
 extern uchar humi_decade;  //湿度十位
 extern uchar humi_unit;    //湿度个位
 extern uchar temp_decade;  //温度十位

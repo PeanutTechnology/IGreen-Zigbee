@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=-1023468943
+Checksum=-1748196124
 [DisAssemblyWindow]
 NumStates=_ 1
 State 1=_ 1
@@ -30,5 +30,10 @@ Count=0
 Stop timers on halt=0
 Leave target running=1
 [Aliases]
-Count=0
+A0=_ "C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Components\hal\target\CC2530EB\_hal_uart_dma.c" ""
+A1=_ "C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Components\hal\target\CC2530EB\hal_uart.c" ""
+A2=_ "C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Components\mt\MT_UART.c" ""
+A3=_ "C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Components\osal\mcu\cc2530\OSAL_Nv.c" ""
+A4=_ "C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+Count=5
 SuppressDialog=0

@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.10.3.10338/W32 for 8051         09/Apr/2016  10:38:28 #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         09/Apr/2016  20:37:17 #
 # Copyright 2004-2011 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -9,19 +9,18 @@
 #    Calling convention =  xdata reentrant                                    #
 #    Constant location  =  data_rom                                           #
 #    Dptr setup         =  1,16                                               #
-#    Source file        =  C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\Source\DHT11. #
-#                          C                                                  #
-#    Command line       =  -f C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\z #
-#                          igbee\Projects\zstack\Samples\SampleApp\CC2530DB\. #
-#                          .\..\..\Tools\CC2530DB\f8wRouter.cfg (-DCPU32MHZ   #
-#                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRU #
-#                          E -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8       #
+#    Source file        =  E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\Source\DHT11.C                    #
+#    Command line       =  -f E:\Projects\IGreen-Zigbee\zigbee\Projects\zstac #
+#                          k\Samples\SampleApp\CC2530DB\..\..\..\Tools\CC2530 #
+#                          DB\f8wRouter.cfg (-DCPU32MHZ -DROOT=__near_func    #
+#                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE                   #
+#                          -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8         #
 #                          -DMAC_CFG_RX_MAX=5 -DRTR_NWK) -f                   #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\Tools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO     #
-#                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR       #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\Tools\CC2530DB\ #
+#                          f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0              #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
 #                          -DDEFAULT_CHANLIST=0x00000800                      #
 #                          -DZDAPP_CONFIG_PAN_ID=0xFF00                       #
 #                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
@@ -43,95 +42,82 @@
 #                          __code" -DGENERIC=__generic                        #
 #                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
 #                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
-#                          -DREJOIN_POLL_RATE=440 C:\Users\hasee\Documents\Gi #
-#                          tHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples\ #
-#                          SampleApp\Source\DHT11.C -D ZTOOL_P1 -D MT_TASK    #
-#                          -D MT_SYS_FUNC -D MT_ZDO_FUNC -D                   #
-#                          LCD_SUPPORTED=DEBUG -lC C:\Users\hasee\Documents\G #
-#                          itHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples #
-#                          \SampleApp\CC2530DB\RouterEB\List\ -lA             #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\Rout #
-#                          erEB\List\ --diag_suppress Pe001,Pa010 -o          #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\Rout #
-#                          erEB\Obj\ -e --no_code_motion --debug              #
-#                          --core=plain --dptr=16,1 --data_model=large        #
-#                          --code_model=banked --calling_convention=xdata_ree #
-#                          ntrant --place_constants=data_rom                  #
-#                          --nr_virtual_regs 16 -I C:\Users\hasee\Documents\G #
-#                          itHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples #
-#                          \SampleApp\CC2530DB\ -I C:\Users\hasee\Documents\G #
-#                          itHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples #
-#                          \SampleApp\CC2530DB\..\Source\ -I                  #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\ZMain\TI2530DB\ -I C:\Users\hasee\Documents\G #
-#                          itHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples #
-#                          \SampleApp\CC2530DB\..\..\..\..\..\Components\hal\ #
-#                          include\ -I C:\Users\hasee\Documents\GitHub\IGreen #
-#                          -Zigbee\zigbee\Projects\zstack\Samples\SampleApp\C #
-#                          C2530DB\..\..\..\..\..\Components\hal\target\CC253 #
-#                          0EB\ -I C:\Users\hasee\Documents\GitHub\IGreen-Zig #
-#                          bee\zigbee\Projects\zstack\Samples\SampleApp\CC253 #
-#                          0DB\..\..\..\..\..\Components\mac\include\ -I      #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\mac\high_level\ -I           #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\mac\low_level\srf04\ -I      #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\mac\low_level\srf04\single_c #
-#                          hip\ -I C:\Users\hasee\Documents\GitHub\IGreen-Zig #
-#                          bee\zigbee\Projects\zstack\Samples\SampleApp\CC253 #
-#                          0DB\..\..\..\..\..\Components\mt\ -I               #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\osal\include\ -I             #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\services\saddr\ -I           #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\services\sdata\ -I           #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\stack\af\ -I                 #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\stack\nwk\ -I                #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\stack\sapi\ -I               #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\stack\sec\ -I                #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\stack\sys\ -I                #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\stack\zdo\ -I                #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\zmac\ -I                     #
-#                          C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\..\. #
-#                          .\..\..\..\Components\zmac\f8w\ -Ohz               #
-#                          --require_prototypes                               #
-#    List file          =  C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\Rout #
-#                          erEB\List\DHT11.lst                                #
-#    Object file        =  C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigb #
-#                          ee\Projects\zstack\Samples\SampleApp\CC2530DB\Rout #
-#                          erEB\Obj\DHT11.r51                                 #
+#                          -DREJOIN_POLL_RATE=440 E:\Projects\IGreen-Zigbee\z #
+#                          igbee\Projects\zstack\Samples\SampleApp\Source\DHT #
+#                          11.C -D ZTOOL_P1 -D MT_TASK -D MT_SYS_FUNC -D      #
+#                          MT_ZDO_FUNC -D LCD_SUPPORTED=DEBUG -lC             #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\RouterEB\List\ -lA       #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\RouterEB\List\           #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\RouterEB\Obj\ -e         #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I E:\Projects\IGreen-Zigbee\zigbee\Projects\zstac #
+#                          k\Samples\SampleApp\CC2530DB\ -I                   #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\Source\ -I            #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\ZMain\TI2530DB\ #
+#                           -I E:\Projects\IGreen-Zigbee\zigbee\Projects\zsta #
+#                          ck\Samples\SampleApp\CC2530DB\..\..\..\..\..\Compo #
+#                          nents\hal\include\ -I E:\Projects\IGreen-Zigbee\zi #
+#                          gbee\Projects\zstack\Samples\SampleApp\CC2530DB\.. #
+#                          \..\..\..\..\Components\hal\target\CC2530EB\ -I    #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\include\ -I E:\Projects\IGreen-Zigbee\zigbee #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\mac\high_level\ -I             #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\low_level\srf04\ -I                          #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\low_level\srf04\single_chip\ -I              #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\mt\ -I E:\Projects\IGreen-Zigbee\zigbee\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\osal\include\ -I                        #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\services\saddr\ -I E:\Projects\IGreen-Zigbee\zig #
+#                          bee\Projects\zstack\Samples\SampleApp\CC2530DB\..\ #
+#                          ..\..\..\..\Components\services\sdata\ -I          #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\af\ -I E:\Projects\IGreen-Zigbee\zigbee\Pr #
+#                          ojects\zstack\Samples\SampleApp\CC2530DB\..\..\..\ #
+#                          ..\..\Components\stack\nwk\ -I                     #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\sapi\ -I E:\Projects\IGreen-Zigbee\zigbee\ #
+#                          Projects\zstack\Samples\SampleApp\CC2530DB\..\..\. #
+#                          .\..\..\Components\stack\sec\ -I                   #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\sys\ -I E:\Projects\IGreen-Zigbee\zigbee\P #
+#                          rojects\zstack\Samples\SampleApp\CC2530DB\..\..\.. #
+#                          \..\..\Components\stack\zdo\ -I                    #
+#                          E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\..\..\..\..\..\Component #
+#                          s\zmac\ -I E:\Projects\IGreen-Zigbee\zigbee\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\zmac\f8w\ -Ohz --require_prototypes   #
+#    List file          =  E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\RouterEB\List\DHT11.lst  #
+#    Object file        =  E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\RouterEB\Obj\DHT11.r51   #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples\SampleApp\Source\DHT11.C
+E:\Projects\IGreen-Zigbee\zigbee\Projects\zstack\Samples\SampleApp\Source\DHT11.C
       1          #include <ioCC2530.h>
 
    \                                 In  segment SFR_AN, at 0x80
@@ -268,32 +254,10 @@ C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples\Sam
    \   000000                DS 1
    \   000001                REQUIRE __INIT_XDATA_Z
      40          
-
-   \                                 In  segment XDATA_Z, align 1, keep-with-next
-     41          uchar temp[2]={0,0}; 
-   \                     temp:
-   \   000000                DS 2
-   \   000002                REQUIRE __INIT_XDATA_Z
-
-   \                                 In  segment XDATA_I, align 1, keep-with-next
-     42          uchar temp1[5]="temp=";
-   \                     temp1:
-   \   000000                DS 5
-   \   000005                REQUIRE `?<Initializer for temp1>`
-   \   000005                REQUIRE __INIT_XDATA_I
-
-   \                                 In  segment XDATA_Z, align 1, keep-with-next
-     43          uchar humidity[2]={0,0};
-   \                     humidity:
-   \   000000                DS 2
-   \   000002                REQUIRE __INIT_XDATA_Z
-
-   \                                 In  segment XDATA_I, align 1, keep-with-next
-     44          uchar humidity1[9]="humidity=";
-   \                     humidity1:
-   \   000000                DS 9
-   \   000009                REQUIRE `?<Initializer for humidity1>`
-   \   000009                REQUIRE __INIT_XDATA_I
+     41          //uchar dht11_temp[2]={0,0}; 
+     42          //uchar dht11_temp1[5]="temp=";
+     43          //uchar dht11_humidity[2]={0,0};
+     44          //uchar dht11_humidity1[9]="humidity=";
      45          
      46          /****************************
      47                  ÑÓÊ±º¯Êý
@@ -736,17 +700,6 @@ C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples\Sam
    \                     `?<Initializer for temp_unit>`:
    \   000000   04           DB 4
 
-   \                                 In  segment XDATA_ID, align 1, keep-with-next
-   \                     `?<Initializer for temp1>`:
-   \   000000   74656D70     DB 74H, 65H, 6DH, 70H, 3DH
-   \            3D      
-
-   \                                 In  segment XDATA_ID, align 1, keep-with-next
-   \                     `?<Initializer for humidity1>`:
-   \   000000   68756D69     DB 68H, 75H, 6DH, 69H, 64H, 69H, 74H, 79H
-   \            64697479
-   \   000008   3D           DB 3DH
-
    \                                 In  segment BANK_RELAYS, align 1
    \                     ??Delay_us?relay:
    \   000000   12....       LCALL   ?BDISPATCH
@@ -822,10 +775,6 @@ C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples\Sam
      ucharRH_data_L_temp             1
      ucharcheckdata_temp             1
      ucharcomdata                    1
-     temp                            2
-     temp1                           5
-     humidity                        2
-     humidity1                       9
      Delay_us                        6
      ?Subroutine0                    5
      ??Subroutine5_0                 7
@@ -839,8 +788,6 @@ C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples\Sam
      ?Subroutine2                    1
      ??Subroutine6_0                 8
      ?<Initializer for temp_unit>    1
-     ?<Initializer for temp1>        5
-     ?<Initializer for humidity1>    9
      ??Delay_us?relay                6
      ??Delay_10us?relay              6
      ??Delay_ms?relay                6
@@ -851,13 +798,13 @@ C:\Users\hasee\Documents\GitHub\IGreen-Zigbee\zigbee\Projects\zstack\Samples\Sam
  463 bytes in segment BANKED_CODE
   30 bytes in segment BANK_RELAYS
    2 bytes in segment SFR_AN
-  15 bytes in segment XDATA_I
-  15 bytes in segment XDATA_ID
-  20 bytes in segment XDATA_Z
+   1 byte  in segment XDATA_I
+   1 byte  in segment XDATA_ID
+  16 bytes in segment XDATA_Z
  
- 508 bytes of CODE  memory
+ 494 bytes of CODE  memory
    0 bytes of DATA  memory (+ 2 bytes shared)
-  35 bytes of XDATA memory
+  17 bytes of XDATA memory
 
 Errors: none
 Warnings: none
